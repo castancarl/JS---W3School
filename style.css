@@ -1,0 +1,39 @@
+body {
+  background-color: #111;
+  color: limegreen;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+a {
+  color: lime;
+}
+
+strong {
+  font-weight: 900;
+}
+
+h5 {
+  margin: 0;
+  opacity: 0.6;
+}
+
+.container {
+  background-color: #222;
+
+  margin: 0 auto;
+}
+
+.flexer {
+  display: flex;
+}
+
+#menu {
+  flex: 4;
+  border: 1px solid limegreen;
+}
+
+#content {
+  padding: 0 16px;
+  flex: 12;
+  border: 1px solid limegreen;
+}
