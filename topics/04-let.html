@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 Schools - Java Script tutorial</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/jquery.js"></script>
+    <script src="/app.js"></script>
+  </head>
+  <body>
+    <h5>W3 Schools - Introduction</h5>
+    <div class="flexer container">
+      <div id="menu"></div>
+      <div id="content">
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!-- TOPIC NAME  -->
+        <h2>Let</h2>
+
+        <!--  -->
+        <h4>1 - Cannot be Redeclared</h4>
+        <div>
+          <p>Variables defined with let cannot be Redeclared.</p>
+          <p>Variables defined with let must be Declared before use.</p>
+          <p>Variables defined with let have Block Scope.</p>
+          <p class="code">
+            let x = "John Doe"; <br />
+            let x = 0; <br /><span class="att-com">// SyntaxError: 'x' has already been declared</span>
+          </p>
+
+          <p class="code">
+            var x = "John Doe"; <br />
+            var x = 0; <br />
+            <span class="att-com">// With Var is OK</span>
+          </p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>2 - Block scope</h4>
+        <div>
+          <p>Before ES6 (2015), JavaScript had only<span class="att"> Global Scope and Function Scope</span>.</p>
+          <p>ES6 introduced two important new JavaScript keywords: <span class="att">let and const</span>..</p>
+          <p><span class="mark">! </span>These two keywords provide Block Scope in JavaScript.</p>
+
+          <p class="code">
+            { <br />
+            let x = 2; <br />
+            } <br />
+            <span class="att-com">// x can NOT be used here</span>
+          </p>
+
+          <p><span class="mark">!</span> Variables declared with the var keyword can NOT have block scope.</p>
+
+          <p class="code">
+            { <br />
+            var x = 2; <br />
+            } <br />
+            <span class="att-com">// x CAN be used here</span>
+          </p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>3 - Redeclaring Variables</h4>
+        <div>
+          <p>Redeclaring a variable using the var keyword can impose problems.</p>
+          <p>Redeclaring a variable inside a block will also redeclare the variable outside the block:</p>
+          <p class="code">
+            var x = 10; <br />
+            <span class="att-com">// Here x is 10</span> <br />
+            {<br />
+            var x = 2;<br />
+            <span class="att-com">// Here x is 2 </span><br />
+            }
+            <br />
+            <span class="att-com">// Here x is 2</span>
+          </p>
+
+          <p>Redeclaring a variable using the <span class="att">let</span> keyword can solve this problem.</p>
+
+          <p>Redeclaring a variable inside a block will not redeclare the variable outside the block:</p>
+        </div>
+        <!--  -->
+
+        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <script src="/topics/04-let.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

@@ -63,3 +63,11 @@ li {
   font-weight: 500;
   color: yellow;
 }
+
+.att-com {
+  color: red;
+}
+
+.code {
+  color: lightgray;
+}
