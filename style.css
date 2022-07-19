@@ -1,15 +1,21 @@
 body {
   background-color: #111;
-  color: limegreen;
+  color: rgb(44, 209, 44);
   font-family: 'Segoe UI', sans-serif;
 }
 
 a {
   color: lime;
+  text-decoration: none;
 }
 
 strong {
-  font-weight: 900;
+  font-weight: 700;
+}
+
+h4,
+h2 {
+  color: lightblue;
 }
 
 h5 {
@@ -17,10 +23,14 @@ h5 {
   opacity: 0.6;
 }
 
+li {
+  margin: 0.5em 0;
+}
+
 .container {
   background-color: #222;
-
   margin: 0 auto;
+  min-height: 95vh;
 }
 
 .flexer {
@@ -36,4 +46,20 @@ h5 {
   padding: 0 16px;
   flex: 12;
   border: 1px solid limegreen;
+}
+
+.list-item {
+  margin: 1.5em 0;
+}
+
+.mark {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: yellow;
+}
+
+.att,
+.att-list {
+  font-weight: 500;
+  color: yellow;
 }

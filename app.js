@@ -1,2 +1,4 @@
-/*------------  INTORDUCTION -------------*/
-document.write('<h3>INTORDUCTION</h3>');
+$(() => {
+  $('#menu').load('/common/header.html');
+  window.scrollTo(0, 10000);
+});
