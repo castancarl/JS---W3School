@@ -22,9 +22,9 @@
         <!--  -->
         <h4>1 - Cannot be Redeclared</h4>
         <div>
-          <p>Variables defined with let cannot be Redeclared.</p>
-          <p>Variables defined with let must be Declared before use.</p>
-          <p>Variables defined with let have Block Scope.</p>
+          <p>Variables defined with LET cannot be Redeclared.</p>
+          <p>Variables defined with LET must be Declared before use.</p>
+          <p>Variables defined with LET have BLOCK SCOPE.</p>
           <p class="code">
             let x = "John Doe"; <br />
             let x = 0; <br /><span class="att-com">// SyntaxError: 'x' has already been declared</span>
@@ -41,9 +41,9 @@
         <!--  -->
         <h4>2 - Block scope</h4>
         <div>
-          <p>Before ES6 (2015), JavaScript had only<span class="att"> Global Scope and Function Scope</span>.</p>
-          <p>ES6 introduced two important new JavaScript keywords: <span class="att">let and const</span>..</p>
-          <p><span class="mark">! </span>These two keywords provide Block Scope in JavaScript.</p>
+          <p>Before ES6 (2015), JavaScript had only<span class="att"> GLOBAL SCOPE and FUNCTION SCOPE</span>.</p>
+          <p>ES6 introduced two important new JavaScript keywords: <span class="att">LET and CONST</span>..</p>
+          <p><span class="mark">! </span>These two keywords provide BLOCK SCOPE in JavaScript.</p>
 
           <p class="code">
             { <br />
@@ -66,8 +66,8 @@
         <!--  -->
         <h4>3 - Redeclaring Variables</h4>
         <div>
-          <p>Redeclaring a variable using the var keyword can impose problems.</p>
-          <p>Redeclaring a variable inside a block will also redeclare the variable outside the block:</p>
+          <p>Redeclaring a variable using the VAR keyword can impose problems.</p>
+          <p>Redeclaring a variable inside a BLOCK will also redeclare the VARIABLE outside the BLOCK:</p>
           <p class="code">
             var x = 10; <br />
             <span class="att-com">// Here x is 10</span> <br />
@@ -79,12 +79,69 @@
             <span class="att-com">// Here x is 2</span>
           </p>
 
-          <p>Redeclaring a variable using the <span class="att">let</span> keyword can solve this problem.</p>
+          <p>Redeclaring a variable using the <span class="att">LET</span> keyword can solve this problem.</p>
 
-          <p>Redeclaring a variable inside a block will not redeclare the variable outside the block:</p>
+          <p>Redeclaring a VARIABLE inside a BLOCK by LET will not redeclare the variable outside the block:</p>
+
+          <div class="code">
+            <p>let x = 10;</p>
+            <p class="att-com">// Here x is 10</p>
+            <p>
+              { <br />
+              let x = 2; <span class="att-com"> // Here x is 2</span> <br />
+              }
+            </p>
+            <p class="att-com">// Here x is 10</p>
+          </div>
+
+          <p>Redeclaring a JavaScript variable with VAR is allowed anywhere in a program:</p>
+          <p>With LET, redeclaring a variable in the same block is NOT allowed:</p>
+
+          <div class="code">
+            var x = 2; <span class="att-com"> // Allowed</span> <br />
+            <u>let x = 3; <span class="att-com">// Not allowed --> because is the same block</span> <br /></u>
+            { <br />
+            let x = 2;<span class="att-com"> // Allowed</span> <br />
+            let x = 3 <span class="att-com"> // Not allowed </span><br />
+            } <br />
+            { <br />
+            let x = 2; <span class="att-com">// Allowed</span> <br />
+            var x = 3 <span class="att-com">// Not allowed (can't redeclare LET)</span><br />}
+          </div>
+
+          <p>Redeclaring a variable with let, in another block, IS allowed:</p>
         </div>
         <!--  -->
 
+        <!--  -->
+        <h4>4 - Let Hoisting</h4>
+        <div>
+          <p>Variables defined with <span class="att">var</span> are hoisted to the top and can be initialized at any time.</p>
+          <p><span class="mark">!</span> Meaning: You can use the variable before it is declared:</p>
+          <p>Variables defined with <span class="att">let</span> are also hoisted to the top of the block, but not initialized.</p>
+          <p><span class="mark">!</span> Meaning: Using a <span class="att">let</span> variable before it is declared will result in a <span class="att">ReferenceError:</span></p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>5 - Const</h4>
+        <div>
+          <p><span class="mark">!</span> JavaScript const variables must be assigned a value when they are declared:</p>
+          <p>Variables defined with const cannot be Redeclared.</p>
+          <p>Variables defined with const cannot be Reassigned.</p>
+          <p>Variables defined with const have Block Scope.</p>
+          <p>As a general rule, always declare a variable with const unless you know that the value will change.</p>
+          <ul class="att-list">
+            Use const when you declare:
+
+            <li>A new Array</li>
+            <li>A new Object</li>
+            <li>A new Function</li>
+            <li>A new RegExp RegExp</li>
+          </ul>
+        </div>
+
+        <!--  -->
         <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
         <!--  -->
