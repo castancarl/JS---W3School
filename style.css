@@ -77,6 +77,10 @@ li {
   margin: 0.5em;
 }
 
-.img-small {
-  width: 400px;
+.des {
+  color: gray;
+}
+
+.demo {
+  color: gray;
 }

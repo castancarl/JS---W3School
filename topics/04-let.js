@@ -36,7 +36,8 @@ try {
   console.log(err);
 }
 
-// EXAMPLE
+// 7 - Assignment Operators
+// EXAMPLE 1
 
 console.log('7) Assignment Operators - EXAMPLE 1');
 
@@ -49,3 +50,10 @@ let z = 'Hello' + 5;
 console.log(z);
 
 document.getElementById('string-a').innerHTML = x + '<br>' + y + '<br>' + z;
+
+// 7 - Assignment Operators
+// EXAMPLE 2
+
+let text1 = 'What a very ';
+text1 += 'nice day';
+document.getElementById('string-b').innerHTML = text1;
