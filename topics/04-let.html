@@ -129,7 +129,7 @@
           <p><span class="mark">!</span> JavaScript const variables must be assigned a value when they are declared:</p>
           <p>Variables defined with const cannot be Redeclared.</p>
           <p>Variables defined with const cannot be Reassigned.</p>
-          <p>Variables defined with const have Block Scope.</p>
+          <p>Variables defined with const have Block Scope <span class="mark">!</span></p>
           <p>As a general rule, always declare a variable with const unless you know that the value will change.</p>
           <ul class="att-list">
             Use const when you declare:
@@ -137,11 +137,53 @@
             <li>A new Array</li>
             <li>A new Object</li>
             <li>A new Function</li>
-            <li>A new RegExp RegExp</li>
+            <li>A new RegExp</li>
           </ul>
         </div>
+        <!--  -->
 
         <!--  -->
+        <h4>6 - Constant Objects and Arrays</h4>
+        <div>
+          <p>The keyword const is a little misleading.</p>
+
+          <p>It does not define a constant value. It defines a constant reference to a value.</p>
+          <ul class="att-list">
+            <span class="mark">!</span>
+            Because of this you can NOT:
+
+            <li>Reassign a constant value</li>
+            <li>Reassign a constant array</li>
+            <li>Reassign a constant object</li>
+          </ul>
+          <ul class="att-list">
+            <p><span class="mark">!</span> But you CAN:</p>
+            <li>Change the elements of constant array</li>
+            <li>Change the properties of constant object</li>
+          </ul>
+
+          <p>EXAMPLE 1</p>
+          <p class="code"><span id="myCars"></span></p>
+          <p>EXAMPLE 2</p>
+          <p class="code"><span id="myFriends"></span></p>
+        </div>
+        <!--  -->
+
+        <!--  -->
+        <h4>7 - Assignment Operators</h4>
+        <div>
+          <p>Assignment operators assign values to JavaScript variables.</p>
+          <p>The addition assignment operator (+=) adds a value to a variable.</p>
+          <p>The + operator can also be used to add (concatenate) strings.</p>
+          <p>The += assignment operator can also be used to add (concatenate) strings:</p>
+          <p><span class="mark">!</span> When used on strings, the + operator is called the concatenation operator.</p>
+          <p><span class="mark">!</span> If you add a number and a string, the result will be a string!</p>
+          <p>EXAMPLE 1 --> see Console (different colors for numbers and strings)</p>
+          <p class="code"><span id="string-a"></span></p>
+          <img class="img-small" src="/images/003-asignment-operators.PNG" alt="" />
+        </div>
+        <!--  -->
+
         <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
 
         <!--  -->
