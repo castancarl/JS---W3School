@@ -9,6 +9,16 @@ a {
   text-decoration: none;
 }
 
+em {
+  color: yellow;
+}
+
+samp > p {
+  font-size: 0.9rem;
+  margin: 0.5em;
+  color: rgb(199, 193, 193);
+}
+
 strong {
   font-weight: 700;
 }
@@ -70,11 +80,6 @@ li {
 
 .code {
   color: lightgray;
-}
-
-.code > p {
-  font-size: 0.9rem;
-  margin: 0.5em;
 }
 
 .des {

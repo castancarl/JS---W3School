@@ -1,9 +1,9 @@
 /*
  1 - The typeof Operator
 */
-
 var x = myFunction(4, 3);
 document.getElementById('demo').innerHTML = x;
+console.log(x);
 
 function myFunction(a, b) {
   let p1 = a;
