@@ -14,20 +14,7 @@
     <div class="flexer container">
       <div id="menu"></div>
       <div id="content">
-        <h2>TOPIC NAME !!!</h2>
-
-        <!-- <h4>1 - SUBTOPIC NAME !!!</h4>
-
-        <div>
-          <p><span class="mark">!</span> Important informations</p>
-        </div> -->
-
-        <!-- <samp>
-          <p class="des">Description of code below:</p>
-          <p>DEMO-1:</p>
-          <p id="demo">Result of executing code</p>
-        </samp> -->
-        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+        <!--  -->
 
         <!--  -->
         <h2>Strings</h2>
@@ -48,6 +35,8 @@
         <!--  -->
         <h4>2 - String Methods and Properties</h4>
         <div>
+          <p><span class="mark">!</span> All string methods <span class="att">return a new string</span>. They don't modify the original string</p>
+          <p><span class="mark">!</span> <span class="att">Strings are immutable</span>: Strings cannot be changed, only replaced</p>
           <p><span class="mark">!</span> <span class="att">Primitive values</span>, like "John Doe", cannot have properties or methods <span class="att">(because they are not objects)</span>.</p>
           <p><span class="mark">!</span> But, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.</p>
           <p><span class="att">So they can be Objects but not Subjects</span></p>
@@ -58,28 +47,88 @@
         <div>
           <p>There are 3 methods for extracting a part of a string:</p>
           <ul>
-            <li>slice (start, end)</li>
+            <li class="att">slice (start, end)</li>
             <li>substring (start, end)</li>
             <li>substr (start, length)</li>
           </ul>
+
+          <p>slice() extracts a part of a string and returns the extracted part in a new string.</p>
+          <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
+          <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
+          <p>If a parameter is negative, the position is counted from the end of the string.</p>
+
+          <samp>
+            <p class="des">Slice out a portion of a string from position 7 to position 13 (13 not included):</p>
+            <p>DEMO-2:</p>
+            <p id="demo-2"></p>
+            <p id="demo-2a"></p>
+          </samp>
+
+          <p>If you omit the second parameter, the method will slice out the rest of the string:</p>
         </div>
 
-        <!-- -->
-        <h4>4 - string.Slice()</h4>
-        <p>slice() extracts a part of a string and returns the extracted part in a new string.</p>
-        <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
-        <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
-        <p>If a parameter is negative, the position is counted from the end of the string.</p>
+        <!--  -->
+        <h4>4 - Replacing String Content</h4>
+        <div>
+          <p>The replace() method replaces a specified value with another value in a string:</p>
+          <samp>
+            <p class="des">Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+            <p>DEMO-3</p>
+            <button onclick="myFunction()">Try it</button>
+            <button onclick="myReFunction()">Reset</button>
+            <p id="demo-3">Please visit Microsoft!</p>
+          </samp>
+          <p>The replace() method does not change the string it is called on.</p>
+          <p>The replace() method returns a new string.</p>
+          <p>The replace() method replaces only the first match</p>
+          <p><sapn class="mark">!</sapn> By default, the replace() method replaces only the first match:</p>
+          <p>If you want to replace all matches, use a <span class="att">regular expression with the /g</span> flag set.</p>
+          <samp>
+            <p class="des">See examples below.</p>
+            <p>DEMO-4</p>
+            <p id="demo-4">Please visit Microsoft and Microsoft!</p>
+            <button onclick="myFunction2()">Try it</button>
+            <button onclick="myReFunction2()">Reset</button>
+          </samp>
+          <p>By default, the replace() method is case sensitive.</p>
+          <p>To replace case insensitive, use a regular expression with an /i flag (insensitive):</p>
+          <p class="att">Regular expressions are written without quotes.</p>
+        </div>
 
-        <samp>
-          <p class="des">Slice out a portion of a string from position 7 to position 13 (13 not included):</p>
-          <p>DEMO-2:</p>
-          <p id="demo-2"></p>
-          <p id="demo-2a"></p>
-        </samp>
+        <!--  -->
+        <h4>5 - Converting to Upper and Lower Case</h4>
+        <div>
+          <p>A string is converted to upper case with <span class="att">toUpperCase()</span>:</p>
+          <p>A string is converted to lower case with<span class="att"> toLowerCase()</span>:</p>
 
-        <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+          <samp>
+            <p class="des">String toUpperCase()</p>
+            <p>DEMO-5</p>
+            <button onclick="myFunA()">Upper</button>
+            <button onclick="myFunAre()">Lower</button>
 
+            <p id="demo-5">Hello World!</p>
+          </samp>
+        </div>
+
+        <!--  -->
+        <h4>6 - String concat()</h4>
+        <p>The concat() method can be used instead of the plus operator.</p>
+        <div>
+          <samp>
+            <p class="des">The concat() method joins two or more strings:</p>
+            <p>DEMO-6</p>
+            <p id="demo-6"></p>
+          </samp>
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
         <!--  -->
         <!--  -->
         <!--  -->
