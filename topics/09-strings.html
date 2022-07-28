@@ -18,7 +18,7 @@
 
         <!--  -->
         <h2>Strings</h2>
-
+        <hr />
         <h4>1 - String Length</h4>
         <div>
           <p>JavaScript strings are for storing and manipulating text.</p>
@@ -31,6 +31,7 @@
           <p>Normally, JavaScript strings are primitive values, created from literals:</p>
           <p><span class="mark">!</span> Comparing two JavaScript objects always returns false.</p>
         </div>
+        <hr />
 
         <!--  -->
         <h4>2 - String Methods and Properties</h4>
@@ -41,6 +42,7 @@
           <p><span class="mark">!</span> But, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.</p>
           <p><span class="att">So they can be Objects but not Subjects</span></p>
         </div>
+        <hr />
 
         <!--  -->
         <h4>3 - Extracting String Parts</h4>
@@ -66,11 +68,12 @@
 
           <p>If you omit the second parameter, the method will slice out the rest of the string:</p>
         </div>
+        <hr />
 
         <!--  -->
         <h4>4 - Replacing String Content</h4>
         <div>
-          <p>The replace() method replaces a specified value with another value in a string:</p>
+          <p>The <span class="att">replace()</span> method replaces a specified value with another value in a string:</p>
           <samp>
             <p class="des">Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
             <p>DEMO-3</p>
@@ -94,6 +97,7 @@
           <p>To replace case insensitive, use a regular expression with an /i flag (insensitive):</p>
           <p class="att">Regular expressions are written without quotes.</p>
         </div>
+        <hr />
 
         <!--  -->
         <h4>5 - Converting to Upper and Lower Case</h4>
@@ -110,6 +114,7 @@
             <p id="demo-5">Hello World!</p>
           </samp>
         </div>
+        <hr />
 
         <!--  -->
         <h4>6 - String concat()</h4>
@@ -122,8 +127,101 @@
           </samp>
         </div>
 
+        <hr />
         <!--  -->
+        <h4>7 - String trim()</h4>
+        <div>
+          <p>The trim() method removes whitespace from both sides of a string:</p>
+          <samp>
+            <p class="des">The trim() Method</p>
+            <p>DEMO-7</p>
+            <p id="demo-7"></p>
+          </samp>
+        </div>
+        <hr />
+
         <!--  -->
+        <h4>8 - String padding</h4>
+        <div>
+          <p><span class="att">padStart()</span> and <span class="att">padEnd()</span> to support padding at the beginning and at the end of a string.</p>
+          <samp>
+            <p class="des">The padStart() method pads a string with another string</p>
+            <p>DEMO-8</p>
+            <p id="demo-8"></p>
+          </samp>
+          <p>The padStart() method is a string method.</p>
+          <p>To pad a number, convert the number to a string first.</p>
+          <samp>
+            <p class="des">To pad a number, convert the number to a string first.</p>
+            <p>DEMO-8b</p>
+            <p id="demo-8b"></p>
+          </samp>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>9 - Extracting String Characters</h4>
+        <div>
+          <p>There are 3 methods for extracting string characters:</p>
+          <ul>
+            <li>charAt (position)</li>
+            <li>charCodeAt (position)</li>
+            <li>Property access [ ]</li>
+          </ul>
+          <samp>
+            <p class="des">The charAt() method returns the character at a specified index (position) in a string:</p>
+            <p>DEMO-9</p>
+            <p id="demo-9"></p>
+            <br />
+            <p class="des">The charCodeAt() method returns the unicode of the character at a specified index in a string:</p>
+            <p>DEMO-9b</p>
+            <p id="demo-9b"></p>
+            <br />
+            <p class="des">ECMAScript 5 (2009) allows property access [ ] on strings:</p>
+            <p>DEMO-9c</p>
+            <p id="demo-9c"></p>
+          </samp>
+          <ul>
+            <p>Property access might be a little unpredictable:</p>
+            <li>It makes strings look like arrays (but they are not)</li>
+            <li>If no character is found, [ ] returns undefined, while charAt() returns an empty string.</li>
+            <li>It is read only. str[0] = "A" gives no error (but does not work!)</li>
+          </ul>
+        </div>
+        <hr />
+
+        <!--  -->
+        <h4>10 - Converting a String to an Array</h4>
+        <div>
+          <p>If you want to work with a string as an array, you can convert it to an array.</p>
+          <p>A string can be converted to an array with the split() method:</p>
+          <p class="att">String split()</p>
+          <samp>
+            <p>DEMO-10</p>
+            <p class="des">Display all elements of array created from string:</p>
+
+            <p id="demo-10"></p>
+            <br />
+            <p>DEMO-10b</p>
+            <p class="des">Display the first array element, after a string split:</p>
+            <p id="demo-10b"></p>
+            <br />
+            <p>DEMO-10c</p>
+            <p class="des">Display the second array element, after a string split:</p>
+            <p id="demo-10c"></p>
+          </samp>
+
+          <p>If the separator is omitted, the returned array will contain the whole string in index [0].</p>
+
+          <p>If the separator is "", the returned array will be an array of single characters:</p>
+
+          <samp>
+            <p>DEMO-10d</p>
+            <p class="des">clear separator RegExp/stop/ --> '' to see vertical txt flow</p>
+            <p id="demo-10d"></p>
+          </samp>
+        </div>
+
         <!--  -->
         <!--  -->
         <!--  -->

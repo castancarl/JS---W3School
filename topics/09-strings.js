@@ -51,3 +51,66 @@ function myFunAre() {
   document.getElementById('demo-6').innerHTML = text4;
 }
 // console.log(text1); TODO: not find because of block scope {}
+
+//DEMO-6 -----------------------------------------
+{
+  let text1 = '     Hello World!     ';
+  let text2 = text1.trim();
+
+  document.getElementById('demo').innerHTML = 'Length text1=' + text1.length + '<br>Length2 text2=' + text2.length;
+}
+
+//DEMO-7 -----------------------------------------
+{
+  let text1 = '     Hello World!     ';
+  let text2 = text1.trim();
+
+  document.getElementById('demo-7').innerHTML = 'Length text1=' + text1.length + '<br>Length2 text2=' + text2.length;
+}
+
+//DEMO-8 -----------------------------------------
+{
+  let text = '5'; // this is a string !
+  document.getElementById('demo-8').innerHTML = text.padStart(4, '.');
+}
+
+// DEMO-8B
+{
+  let numb = 5; // this is a number !
+  let text = numb.toString();
+  document.getElementById('demo-8b').innerHTML = text.padStart(4, 0);
+}
+
+//DEMO-9 -----------------------------------------
+
+{
+  let text = 'HELLO WORLD';
+  document.getElementById('demo-9').innerHTML = text.charAt(0);
+  document.getElementById('demo-9b').innerHTML = text.charCodeAt(0);
+  document.getElementById('demo-9c').innerHTML = text[0];
+}
+
+//DEMO-10 -----------------------------------------
+{
+  let text = 'a,b,c,d,e,f -- g,h,i,j';
+  const myArray = text.split('--');
+  document.getElementById('demo-10').innerHTML = myArray;
+
+  // DEMO-10B
+  document.getElementById('demo-10b').innerHTML = myArray[0];
+
+  // DEMO-10C
+  document.getElementById('demo-10c').innerHTML = myArray[1];
+}
+// DEMO-10D
+
+{
+  let text = 'Hello stop What stop are stop you stop doing?';
+  const myArr = text.split(/stop/);
+
+  text = '';
+  for (let i = 0; i < myArr.length; i++) {
+    text += myArr[i] + '<br>';
+  }
+  document.getElementById('demo-10d').innerHTML = text;
+}
