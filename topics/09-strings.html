@@ -19,10 +19,10 @@
         <!--  -->
         <h2>Strings</h2>
         <hr />
-        <h4>1 - String Length</h4>
+        <h4>1 - String Length (property)</h4>
         <div>
           <p>JavaScript strings are for storing and manipulating text.</p>
-          <p>To find the length of a string, use the built-in length property:</p>
+          <p>To find the length of a string, use the <span class="att">built-in length property:</span></p>
           <samp>
             <p class="des">Length property:</p>
             <p>DEMO-1:</p>
@@ -39,7 +39,7 @@
           <p><span class="mark">!</span> All string methods <span class="att">return a new string</span>. They don't modify the original string</p>
           <p><span class="mark">!</span> <span class="att">Strings are immutable</span>: Strings cannot be changed, only replaced</p>
           <p><span class="mark">!</span> <span class="att">Primitive values</span>, like "John Doe", cannot have properties or methods <span class="att">(because they are not objects)</span>.</p>
-          <p><span class="mark">!</span> But, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.</p>
+          <p><span class="mark">!</span> But, methods and properties are also available<span class="att"> to </span>primitive values, because JavaScript treats primitive values <span class="att">as objects</span> when executing methods and properties.</p>
           <p><span class="att">So they can be Objects but not Subjects</span></p>
         </div>
         <hr />
@@ -55,7 +55,6 @@
           </ul>
 
           <p>slice() extracts a part of a string and returns the extracted part in a new string.</p>
-          <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
           <p>The method takes 2 parameters: the start position, and the end position (end not included).</p>
           <p>If a parameter is negative, the position is counted from the end of the string.</p>
 
@@ -74,6 +73,7 @@
         <h4>4 - Replacing String Content</h4>
         <div>
           <p>The <span class="att">replace()</span> method replaces a specified value with another value in a string:</p>
+
           <samp>
             <p class="des">Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
             <p>DEMO-3</p>
@@ -81,9 +81,9 @@
             <button onclick="myReFunction()">Reset</button>
             <p id="demo-3">Please visit Microsoft!</p>
           </samp>
+
           <p>The replace() method does not change the string it is called on.</p>
           <p>The replace() method returns a new string.</p>
-          <p>The replace() method replaces only the first match</p>
           <p><sapn class="mark">!</sapn> By default, the replace() method replaces only the first match:</p>
           <p>If you want to replace all matches, use a <span class="att">regular expression with the /g</span> flag set.</p>
           <samp>
@@ -164,9 +164,9 @@
         <div>
           <p>There are 3 methods for extracting string characters:</p>
           <ul>
-            <li>charAt (position)</li>
-            <li>charCodeAt (position)</li>
-            <li>Property access [ ]</li>
+            <li>charAt (position) (M)</li>
+            <li>charCodeAt (position) (M)</li>
+            <li><span class="att">property</span> access[] (P)</li>
           </ul>
           <samp>
             <p class="des">The charAt() method returns the character at a specified index (position) in a string:</p>
@@ -221,7 +221,7 @@
             <p id="demo-10d"></p>
           </samp>
         </div>
-
+        <hr />
         <!--  -->
         <!--  -->
         <!--  -->

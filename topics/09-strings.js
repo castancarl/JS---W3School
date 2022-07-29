@@ -2,7 +2,7 @@
  1 - Subtopic name
 */
 //DEMO-1 -----------------------------------------
-let text = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+let text = 'ABCDEFGHIJKLMNOPQRSTUVWXdfsdfsdfYZ';
 document.getElementById('demo').innerHTML = text.length;
 
 //DEMO-2 -----------------------------------------
@@ -52,14 +52,6 @@ function myFunAre() {
 }
 // console.log(text1); TODO: not find because of block scope {}
 
-//DEMO-6 -----------------------------------------
-{
-  let text1 = '     Hello World!     ';
-  let text2 = text1.trim();
-
-  document.getElementById('demo').innerHTML = 'Length text1=' + text1.length + '<br>Length2 text2=' + text2.length;
-}
-
 //DEMO-7 -----------------------------------------
 {
   let text1 = '     Hello World!     ';
@@ -70,15 +62,15 @@ function myFunAre() {
 
 //DEMO-8 -----------------------------------------
 {
-  let text = '5'; // this is a string !
-  document.getElementById('demo-8').innerHTML = text.padStart(4, '.');
+  let text = 'string some'; // this is a string !
+  document.getElementById('demo-8').innerHTML = text.padStart(19, '.');
 }
 
 // DEMO-8B
 {
   let numb = 5; // this is a number !
   let text = numb.toString();
-  document.getElementById('demo-8b').innerHTML = text.padStart(4, 0);
+  document.getElementById('demo-8b').innerHTML = text.padStart(9, '.');
 }
 
 //DEMO-9 -----------------------------------------
@@ -106,7 +98,9 @@ function myFunAre() {
 
 {
   let text = 'Hello stop What stop are stop you stop doing?';
-  const myArr = text.split(/stop/);
+  // const myArr = text.split(''); // case 1
+  // const myArr = text.split(' '); // case 2
+  const myArr = text.split(/stop/); // case 3
 
   text = '';
   for (let i = 0; i < myArr.length; i++) {
