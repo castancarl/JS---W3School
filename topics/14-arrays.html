@@ -22,11 +22,78 @@
 
         <!--  -->
         <h4>1 - Why Use Arrays?</h4>
-        <div></div>
-        <hr />
+        <div>
+          <p>An array is a special variable, which can hold more than one value:</p>
+          <code>const cars = ["Saab", "Volvo", "BMW"];</code>
+
+          <p>What if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?</p>
+          <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+          <hr />
+        </div>
+
         <!--  -->
+        <h4>2 - Creating an Array</h4>
+        <div>
+          <code>const cars = new Array("Saab", "Volvo", "BMW");</code>
+          <p><span class="mark">!</span> compare to objects and functions:</p>
+          <code>const person = new Object();</code> <br />
+          <code>const x = function () {};</code><br />
+          <code>const x = function (a, b) {return a * b};</code>
+          <p>Using an array literal is the easiest way to create a JavaScript Array.</p>
+          <code>const array_name = [item1, item2, ...]; </code>
+          <samp>
+            <p class="des">Example of creating array</p>
+            <p>DEMO-2 :</p>
+            <p id="demo-2"></p>
+            <p class="des">You can also create an array, and then provide the elements:</p>
+            <p>DEMO-2b :</p>
+            <p id="demo-2b"></p>
+          </samp>
+          <hr />
+        </div>
+
         <!--  -->
+        <h4>3 - Arrays are Objects</h4>
+        <div>
+          <p>Arrays are a special type of objects. The <class class="att">typeof operator</class> in JavaScript returns "object" for arrays.</p>
+          <p>But, JavaScript arrays are best described as arrays.</p>
+          <p><span class="att">Arrays use numbers</span> to access its "elements".</p>
+          <p><sapn class="att">Objects use names</sapn> to access its "members".</p>
+          <samp>
+            <p class="des">Array - use numbers <span class="att">person[0]</span></p>
+            <p>DEMO-3</p>
+            <p id="demo-3"></p>
+            <p class="des">Objects - use name <span class="att">person.firstName</span></p>
+            <p>DEMO-3b</p>
+            <p id="demo-3b"></p>
+            <p>DEMO-3c</p>
+            <p class="des">Objects - use 'complex name': <span class="att">person['eyes colour']</span></p>
+
+            <p id="demo-3c"></p>
+          </samp>
+          <hr />
+        </div>
+
         <!--  -->
+        <h4>4 - Array Elements Can Be Objects</h4>
+        <div>
+          <p>JavaScript variables can be objects. Arrays are special kinds of objects.</p>
+          <p>Because of this, you can have variables of different types in the same Array.</p>
+          <p>You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:</p>
+          <ul>
+            <li>myArray[0] = Date.now;</li>
+            <li>myArray[1] = myFunction;</li>
+            <li>myArray[2] = myCars;</li>
+          </ul>
+          <hr />
+        </div>
+
+        <!--  -->
+        <h4>5 - Array Properties and Methods</h4>
+        <div>
+          <p>The real strength of JavaScript arrays are the built-in array properties and methods:</p>
+          <hr />
+        </div>
         <!--  -->
         <!--  -->
         <!--  -->

@@ -13,9 +13,19 @@ em {
   color: yellow;
 }
 
+samp {
+  display: block;
+  margin-top: 16px;
+  border: 1px white dotted;
+}
+
 samp > p {
   font-size: 0.9rem;
   margin: 0.5em;
+  color: rgb(199, 193, 193);
+}
+
+code {
   color: rgb(199, 193, 193);
 }
 
