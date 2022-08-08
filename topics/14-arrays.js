@@ -18,9 +18,16 @@
   document.getElementById('demo-3').innerHTML = person[0];
 }
 //DEMO-3b,3c -------------------------------------
-
 {
   const person = { firstName: 'John', lastName: 'Doe', 'eyes colour': 'light-blue', age: 46 };
   document.getElementById('demo-3b').innerHTML = person.firstName;
   document.getElementById('demo-3c').innerHTML = person['eyes colour'];
+}
+//DEMO-5 -------------------------------------
+
+{
+  function add(a, b) {
+    return a + b;
+  }
+  document.getElementById('demo-5').innerHTML = add(1, 4);
 }
