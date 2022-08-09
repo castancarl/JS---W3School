@@ -23,11 +23,49 @@
   document.getElementById('demo-3b').innerHTML = person.firstName;
   document.getElementById('demo-3c').innerHTML = person['eyes colour'];
 }
-//DEMO-5 -------------------------------------
+//DEMO-5/1 -------------------------------------
+{
+  const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+  document.getElementById('demo-5/1').innerHTML = fruits.length;
+}
+//DEMO-5/2--------------------------------------
+{
+  const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+  document.getElementById('demo-5/2').innerHTML = fruits[0];
+}
+
+//DEMO-5/2b-------------------------------------
+{
+  const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+  document.getElementById('demo-5/2b').innerHTML = fruits[fruits.length - 1];
+}
+
+//DEMO-5/3--------------------------------------
+{
+  const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+  let fLen = fruits.length;
+  let text = '<ul>';
+
+  for (let i = 0; i < fLen; i++) {
+    text += '<li>' + fruits[i] + '</li>';
+  }
+
+  text += '</ul>';
+  document.getElementById('demo-5/3').innerHTML = text;
+}
+//DEMO-5/3b--------------------------------------
 
 {
-  function add(a, b) {
-    return a + b;
+  const fruits = ['Banana', 'Orange', 'Apple', 'Mango'];
+
+  let text = '<ul>';
+
+  fruits.forEach(myFunction);
+  text += '</ul>';
+
+  document.getElementById('demo-5/3b').innerHTML = text;
+
+  function myFunction(value) {
+    text += '<li>' + value + '</li>';
   }
-  document.getElementById('demo-5').innerHTML = add(1, 4);
 }
